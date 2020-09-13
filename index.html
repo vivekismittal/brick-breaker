@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Germania+One">
     <title>BRICK BREAKER</title>
+    <style>
+         *{
+            padding:10px;
+            font-family: "Germania One";
+            font-size: 40px;
+            color :darkgreen;
+            background-image: url("images/wallpaper.jpg");
+        }
+        p{
+            font-size: 30px;
+            line-height: 40px;
+            color: black;
+            font-weight: bolder;
+        }
+         #gameover{
+            position: absolute;
+            width : 400px;
+            height: 500px;
+            background: rgba(0,0,0,0.5);
+            display: none;
+        }
+        #restart{
+            position: absolute;
+            top: 250px;
+            left : 90px;
+            cursor: pointer;
+            color : #FFF;
+        }
+        .flex{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    </style>
 </head>
-<body>
+<body><div class="flex"><div><h3>SCORE</h3><p id="score"></p><h1>Developed by :-</h1><p>VIVEK MITTAL &<p>SHIVANG SHARMA</p></div>
+    <div><div id="gameover">
+        <div id="restart">Play Again!</div>
+    </div>
     <canvas id="break" width="400" height="500"></canvas>
     <script src="js/game.js"></script>
-    <script src="js/components.js"></script>
+    <script src="js/components.js"></script></div>
+    <div><h1>INSTRUCTIONS for this game:-<br> BRICK-BREAKER </h1><p>1 There are 3 levels in this game<br>2 paddle in this game will move only by use of LEFT and RIGHT arrow key in the keyboard<br>3 you can pause the game by press the any key in the keyboard except left and right arrow key </p></div></div>
+    
 </body>
 </html>
